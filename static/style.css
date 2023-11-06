@@ -1,0 +1,115 @@
+/* 전체 페이지 스타일링 */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* 로그인 컨테이너 스타일링 */
+.login-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+}
+
+/* 로그인 폼 스타일링 */
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* 로그인 버튼 스타일링 */
+#login-button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#login-button:hover {
+  background-color: #0056b3;
+}
+
+/* 회원가입 버튼 스타일링 */
+#register-button {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px; /* 로그인 버튼과의 간격 추가 */
+}
+
+#register-button:hover {
+  background-color: #1f8c3c;
+}
+
+/* 회원가입 폼 스타일링 */
+#register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#register-button {
+  background-color: #28a745; /* 초록색 */
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+#register-button:hover {
+  background-color: #1e7e34; /* 더 진한 초록색 */
+}
+
+/* 회원가입 버튼 스타일링 */
+#login-button {
+  background-color: #007BFF; /* 파란색 */
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+#login-button:hover {
+  background-color: #0056b3; /* 더 진한 파란색 */
+}
+

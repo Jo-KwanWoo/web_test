@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사이드바 예제</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="/static/dashboard_styles.css">
+    
+</head>
+<body>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <div class="title">
+        <li><a>SeeSoTV</a></li>
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="#" id="dashboard">대시보드   ∨</a>
+                </li>
+                <li>
+                    <a href="#" id="visit-statistics">방문통계    ∨</a>
+                    <ul class="submenu">
+                        <div class="sidebar_submenu">
+                            <li><a href="#" id="show_all_stores">모든매장</a></li>
+                            <li><a href="#" id="store_analyze">매장분석</a></li>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+            
+        </div>
+        
+    </div>
+
+    <div class="rectangle">
+        <input type="text" id="select_date" name = "select_date" placeholder="날짜 선택">
+        <button id="register-button">회원 등록</button>
+    </div>
+       
+    <div class = "content">
+        <div class="dashboard_content">
+            <div class="dashboard-header">
+                <a id="dashboard-link">대시보드</a>
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="매장검색...">
+                    <button id="search-button">검색</button>
+                </div>
+            </div>
+                <div class="store"><a>매장 이름</a></div>
+                <hr class="custom-divider">
+        </div>
+
+        <div>
+            <div class="show_all_stores_content">
+                <div class="dashboard-header">
+                    <a id="dashboard-link">모든 매장</a>
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="매장검색...">
+                        <button id="search-button">검색</button>
+                    </div>
+                </div>
+                <div class="store">
+                    <a class="store-info name">매장 이름</a>
+                    <a class="store-info address">매장 주소</a>
+                    <a class="store-info visitors">방문자 수</a>
+                    <a class="store-info max-customers">최대 방문 고객군</a>
+                </div>
+                
+                
+                
+                    <hr class="custom-divider">
+            
+        </div>
+    </div>
+    
+    <script type="module" src="/static/dashboard_script.js"></script>
+</body>
+</html>
